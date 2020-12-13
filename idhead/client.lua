@@ -50,7 +50,7 @@ Citizen.CreateThread(function()
                         if (playerDistances[id] < disPlayerNames) then
                             x2, y2, z2 = table.unpack(GetEntityCoords(GetPlayerPed(id), true))
                             if NetworkIsPlayerTalking(id) then
-                                DrawText3D(x2, y2, z2+1, " " .. GetPlayerServerId(id) .. " | " .. GetPlayerName(id)  .. "  ~g~Puhuu... ", 255,255,255)
+                                DrawText3D(x2, y2, z2+1, " " .. GetPlayerServerId(id) .. " | " .. GetPlayerName(id)  .. "  ~n~~g~Puhuu... ", 255,255,255)
                             else
                                 DrawText3D(x2, y2, z2+1, " " .. GetPlayerServerId(id) .. " | " .. GetPlayerName(id)  .. " " , 255,255,255)
                             end
